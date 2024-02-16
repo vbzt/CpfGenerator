@@ -1,0 +1,130 @@
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* imports */
+
+/* scroll */
+::-webkit-scrollbar-thumb {
+  background-color: var(--colorido);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: var(--corFundo);
+}
+/* scroll */
+
+/* pre definicao padrao */
+* {
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-style: normal;
+  font-family: "Poppins";
+  margin: 0;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  resize: none;
+  outline: none;
+  border: 0;
+  color: var(--corTexto);
+  scroll-behavior: smooth;
+}
+/* pre definicao padrao */
+
+/* root */
+:root {
+  --corTexto: #111;
+  --corFundo: #272e53;
+  --colorido: #fff;
+}
+/* root */
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: var(--corFundo);
+  color: var(--corTexto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5%;
+}
+
+.search {
+  background-color: var(--colorido);
+  padding: 1%;
+  width: 30%;
+  height: 8%;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+select {
+  border: solid 0.01px var(--colorido) ;
+  border-bottom: 2px solid #555;
+  color: var(--corTexto);
+  background-color: transparent;
+  padding: 0.7vh;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+
+
+
+button {
+  background-color: var(--corFundo);
+  color: var(--colorido);
+  padding: 1vh 3vh;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  width: max-content;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.result {
+  background-color: var(--colorido);
+  padding: 1vw;
+  width: 30%;
+  height: max-content;
+  border-radius: 7px;
+  display: none;
+  gap: 1rem;
+  align-items: start;
+  flex-direction: column;
+}
+
+.result p{
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .search{
+    width: 80%;
+    height: 5%;
+    padding: 3%; 
+  }
+
+  input, button{
+    font-size: 1.5rem;
+  }
+
+  .result{
+    width: 80%;
+  }
+
+  .result p{
+    font-size: 1.5rem;
+  }
+}
