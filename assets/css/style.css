@@ -74,6 +74,10 @@ select {
   font-weight: 500;
 }
 
+select:focus{
+  border: solid 0.01px var(--corFundo) ;
+}
+
 
 
 
@@ -116,7 +120,7 @@ button {
     padding: 3%; 
   }
 
-  input, button{
+  select, option, button{
     font-size: 1.5rem;
   }
 
